@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import FrozenDept from './components/FrozenDept';
+import MeatDept from './components/MeatDept';
+import ProduceDept from './components/ProduceDept';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>Frozen Department</h2>
+      <FrozenDept />
+      <h2>Meat Department</h2>
+      <MeatDept />
+      <h2>Producer Department</h2>
+      <ProduceDept />
     </div>
   );
 }
